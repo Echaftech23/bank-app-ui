@@ -6,6 +6,8 @@ import {
   Navbar,
   Stats,
   Hero,
+  CardDeal,
+  Testimonials,
 } from "./components";
 import { useEffect } from "react";
 import aos from "aos";
@@ -36,6 +38,9 @@ const App = () => {
           <Stats />
           <Business />
           <Billing />
+
+          <CardDeal />
+          <Testimonials />
           
           <Footer />
         </div>
