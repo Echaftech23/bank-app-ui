@@ -1,5 +1,7 @@
 import styles from "./style";
 import {
+  Billing,
+  Business,
   Footer,
   Navbar,
   Stats,
@@ -32,9 +34,9 @@ const App = () => {
       <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
           <Stats />
-          {/* billing */}
-
-          {/* footer */}
+          <Business />
+          <Billing />
+          
           <Footer />
         </div>
       </div>
