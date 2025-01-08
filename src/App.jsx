@@ -1,4 +1,10 @@
 import styles from "./style";
+import {
+  Footer,
+  Navbar,
+  Stats,
+  Hero,
+} from "./components";
 import { useEffect } from "react";
 import aos from "aos";
 
@@ -11,7 +17,27 @@ const App = () => {
   }, []);
   return (
     <div className="bg-primary w-full overflow-hidden">
-      Hi there 👋
+      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+        <div className={`${styles.boxWidth}`}>
+          <Navbar />
+        </div>
+      </div>
+
+      <div className={`bg-primary ${styles.flexStart}`}>
+        <div className={`${styles.boxWidth}`}>
+          <Hero />
+        </div>
+      </div>
+
+      <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+        <div className={`${styles.boxWidth}`}>
+          <Stats />
+          {/* billing */}
+
+          {/* footer */}
+          <Footer />
+        </div>
+      </div>
     </div>
   );
 };
