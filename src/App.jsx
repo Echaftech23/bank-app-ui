@@ -2,12 +2,14 @@ import styles from "./style";
 import {
   Billing,
   Business,
+  CardDeal,
+  Clients,
+  CTA,
   Footer,
   Navbar,
   Stats,
-  Hero,
-  CardDeal,
   Testimonials,
+  Hero,
 } from "./components";
 import { useEffect } from "react";
 import aos from "aos";
@@ -38,10 +40,10 @@ const App = () => {
           <Stats />
           <Business />
           <Billing />
-
           <CardDeal />
           <Testimonials />
-          
+          <Clients />
+          <CTA />
           <Footer />
         </div>
       </div>
